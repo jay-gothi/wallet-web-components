@@ -1,4 +1,3 @@
-import { AUTH_HEADER, AUTH_TOKEN } from "../../../base";
 import { HttpAuthHeader } from "../../data/protocols/http/http-auth-header";
 import { HttpGetClient } from "../../data/protocols/http/http-get-client";
 import { HttpPostClient } from "../../data/protocols/http/http-post-client";
@@ -31,8 +30,8 @@ export class FetchHttpClient implements HttpPostClient, HttpGetClient, HttpPutCl
    * @returns string | null
    */
   getAuthToken(): string {
-    if (AUTH_TOKEN) {
-      let ltoken = localStorage.getItem(AUTH_TOKEN);
+    if (process.env.REACT_APP_WALLET_COMPONENT_AUTH_TOKEN) {
+      let ltoken = localStorage.getItem(process.env.REACT_APP_WALLET_COMPONENT_AUTH_TOKEN);
       if (ltoken && ltoken != "") {
         return decrypt(JSON.parse(ltoken));
       }
@@ -96,7 +95,7 @@ export class FetchHttpClient implements HttpPostClient, HttpGetClient, HttpPutCl
     if (!FetchHttpClient.token)
       FetchHttpClient.token = FetchHttpClient.instance.getAuthToken();
     if (headers && FetchHttpClient.token && FetchHttpClient.token != "")
-      headers[AUTH_HEADER] = FetchHttpClient.token
+      headers[process.env.REACT_APP_WALLET_COMPONENT_AUTH_HEADER] = FetchHttpClient.token
     return headers;
   }
 }

@@ -14,7 +14,7 @@ export class AccountTransactionComponent {
     render() {
         let credit: boolean = this.transaction.type == 'credit' ? true: false;
         return <li class="p-2 pr-0 flex border-t pb-5 rounded-5 border-blue-100">
-            <div class={`text-2xl flex-initial rounded-full h-24 w-24 flex text-white items-center justify-center font-medium ` + (credit ? "bg-green-300" : 'bg-red-300')}>
+            <div class={`text-lg flex-initial rounded-full h-20 w-20 flex text-white items-center justify-center font-medium ` + (credit ? "bg-green-300" : 'bg-red-300')}>
                 ₹{ this.transaction.amount }
             </div>
             <div class="flex-1">

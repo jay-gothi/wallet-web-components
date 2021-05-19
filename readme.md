@@ -15,8 +15,8 @@ It will access the logged in user details from the LocalStorage of the browser. 
 Variables to be added in .env file
 
 ```env
-REACT_APP_API_URL = 
-REACT_APP_AUTH_HEADER = 
-REACT_APP_AUTH_TOKEN = 
-REACT_APP_AUTH_USER = 
+REACT_APP_WALLET_COMPONENT_API_URL = 
+REACT_APP_WALLET_COMPONENT_AUTH_HEADER = 
+REACT_APP_WALLET_COMPONENT_AUTH_TOKEN = 
+REACT_APP_WALLET_COMPONENT_AUTH_USER = 
 ```

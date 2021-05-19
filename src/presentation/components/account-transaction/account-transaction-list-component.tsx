@@ -40,7 +40,7 @@ export class AccountTransactionListComponent {
   }
 
   render() {
-    return <div>
+    return <div class="overflow-y-auto h-96">
       <ul class="list-none">
         {
           this.transactions.map(t => {

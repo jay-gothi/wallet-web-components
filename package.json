@@ -1,6 +1,6 @@
 {
   "name": "@goapptiv-code/wallet-web-components",
-  "version": "0.0.1",
+  "version": "0.0.17",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
@@ -20,6 +20,10 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jay-gothi/wallet-web-components"
   },
   "dependencies": {
     "@stencil/core": "^2.0.1"

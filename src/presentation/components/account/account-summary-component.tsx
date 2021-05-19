@@ -51,13 +51,13 @@ export class AccountSummaryComponent {
 
     render() {
         return <div class="grid grid-cols-1">
-            <div class="relative z-10 col-start-1 row-start-1 px-4 pt-20 pb-3 bg-gradient-to-t from-black">
+            <div class="relative z-10 col-start-1 row-start-1 px-4 pt-10 pb-3 bg-gradient-to-t from-black">
                 <p class="text-sm font-medium text-white">Current balance</p>
                 <h2 class="text-6xl font-semibold text-white">
                     ₹ { this.summary.total_amount }
                 </h2>
             </div>
-            <div class="col-start-1 row-start-2 px-4 sm:pb-16">
+            <div class="col-start-1 row-start-2 px-4">
                 <div class="flex items-center text-sm font-medium my-2 text-gray-400">
                     <div class="ml-1 mr-5">
                         <span class="text-lg">₹{ this.summary.total_pending }</span>

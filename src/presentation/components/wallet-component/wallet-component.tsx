@@ -5,10 +5,10 @@ import { Component, h } from '@stencil/core';
   styleUrl: 'wallet-component.css',
   shadow: true,
 })
-export class MyComponent {
+export class WalletComponent {
   render() {
-    return <div class="grid grid-cols-1 sm:grid-cols-3">
-      <div class="col-start-2">
+    return <div class="grid grid-cols-1">
+      <div class="col-start-1">
         <account-summary-component-factory></account-summary-component-factory>
 
         <h1 class="uppercase text-blue-600 text-center border-t p-2">
